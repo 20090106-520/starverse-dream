@@ -4,7 +4,7 @@
 
 一场由粒子与光写成的沉浸式数字艺术体验。全屏 Canvas 粒子系统 + 滚动叙事，六个「梦境章节」各有独立的视觉主题与粒子形态，随滚动平滑过渡。
 
-**在线体验** → <https://starverse-dream.app.workbuddy.host/>
+**在线体验** → <https://20090106-520.github.io/starverse-dream/>
 
 ---
 

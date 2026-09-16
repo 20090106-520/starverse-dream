@@ -329,6 +329,10 @@
     var wrap = document.createElement('section');
     wrap.className = 'bento';
     wrap.setAttribute('aria-label', '星域档案 · 章节索引');
+    var title = document.createElement('h3');
+    title.className = 'bento__title';
+    title.textContent = '星域档案';
+    wrap.prepend(title);
     SCENES.forEach(function (s, i) {
       var cell = document.createElement('button');
       cell.type = 'button';
