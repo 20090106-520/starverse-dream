@@ -1,0 +1,7 @@
+# 验证脚本与截图产物（仅本地使用）
+.verify/
+*.log
+
+# 系统文件
+Thumbs.db
+.DS_Store
