@@ -32,6 +32,25 @@
 - 相遇概率：由本机专属种子推导的浪漫统计，刷新不变
 - 环境音：Web Audio 实时合成（低音 drone + 风噪 + 五声音阶钟声），**零音频文件**
 
+**扩展层（`js/ui-extras.js`，零依赖，全部节点运行时创建）**
+
+- 阅读进度环：右下角 SVG 描边进度 + 百分比，点击回到序章
+- 命令面板：`⌘K` / `Ctrl+K` / `/` 唤出，可搜索跳章、开关声音、复制宇宙编号、重播
+- 星域档案：终章 Bento 网格章节索引，任意一章一键直达
+- 光标揭示：光标半径内的星尘被点亮，移开后留下缓慢衰减的余辉
+- 标题解密：章节标题以星域字形乱序落定，像信号逐位锁定
+
+## 参考来源
+
+本项目的设计系统与交互手法参考了以下公开资源，落地方式记录在 `DESIGN.md` §8：
+
+| 来源 | 借鉴内容 |
+| --- | --- |
+| [styles.refero.design](https://styles.refero.design) | 设计令牌分层、DESIGN.md 的组织方式 |
+| [canvasui.dev](https://canvasui.dev) | Decrypt Reveal、Particle Reveal |
+| [namethatui.com](https://namethatui.com) | Progress Ring、Command Palette、Bento Grid |
+| [github.com/Kainiko943/beautiful-ui](https://github.com/Kainiko943/beautiful-ui) | 稀疏导航、状态覆盖、质量栏与降级纪律 |
+
 ## 技术约束
 
 - 纯 HTML / CSS / JavaScript，**零构建工具、零外部依赖**
@@ -48,7 +67,10 @@ starverse-dream/
 └── js/
     ├── particles.js    # Canvas 2D 粒子引擎（形态生成 / 物理 / 渲染）
     ├── audio.js        # Web Audio 环境音合成
-    └── main.js         # 滚动叙事编排、章节过渡、交互与本地存储
+    ├── main.js         # 滚动叙事编排、章节过渡、交互与本地存储
+    └── ui-extras.js    # 扩展层：阅读进度环 / ⌘K 命令面板 / 星域档案网格
+
+DESIGN.md               # 设计系统文档（令牌 / 组件 / 动效 / 无障碍 / 质量栏）
 ```
 
 ## 本地运行
@@ -78,6 +100,10 @@ python -m http.server 8080
 ## 浏览器要求
 
 Chrome / Edge / Safari / Firefox 现代版本。`backdrop-filter`（玻璃拟态）与 Web Audio 在较旧浏览器上会优雅降级。
+
+## 发布注意
+
+仓库内 `index.html` / `css/style.css` / `js/*.js` 必须以 **UTF-8 文本**提交。若以 Base64 形式入库，GitHub Pages 将无法解析渲染（页面只剩源码字符串）。
 
 ## 许可
 

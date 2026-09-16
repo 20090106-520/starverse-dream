@@ -1,1 +1,332 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InpoLUNOIiBjbGFzcz0ibm8tanMiPgo8aGVhZD4KPG1ldGEgY2hhcnNldD0iVVRGLTgiIC8+CjwhLS0g5pyA5pep5omn6KGM77ya5qCH6K6w44CMSlMg5Y+v55So44CN44CC6ISa5pys6KKr56aB55So5oiW5YaF6IGU5aSx5pWI5pe277yMaHRtbC5uby1qcyDkvJrkv53nlZnvvIwKICAgICBDU1Mg6YeM55qE5YWc5bqV6KeE5YiZ5Lya5o6l566h77yM6aG16Z2i5L6d5pen5piv5Y+v6K+755qE6Z2Z5oCB6ZW/6aG177yM6ICM5LiN5piv5LiA5Z2X6buR5bGP44CCIC0tPgo8c2NyaXB0PmRvY3VtZW50LmRvY3VtZW50RWxlbWVudC5jbGFzc0xpc3QucmVtb3ZlKCduby1qcycpOzwvc2NyaXB0Pgo8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEsIHZpZXdwb3J0LWZpdD1jb3ZlciIgLz4KPG1ldGEgbmFtZT0idGhlbWUtY29sb3IiIGNvbnRlbnQ9IiMwNTA2MGYiIC8+CjxtZXRhIG5hbWU9ImNvbG9yLXNjaGVtZSIgY29udGVudD0iZGFyayIgLz4KPHRpdGxlPuaYn+Wfn+aipuWigyDCtyBTVEFSVkVSU0UgRFJFQU08L3RpdGxlPgo8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0i5pif5Z+f5qKm5aKDIFNUQVJWRVJTRSBEUkVBTSDigJTigJQg5LiA5Zy655Sx57KS5a2Q5LiO5YWJ5YaZ5oiQ55qE5rKJ5rW45byP5pWw5a2X6Im65pyv5L2T6aqM44CC5q+P5LiA5Liq5L2g77yM6YO95piv5LiA6aKX54us5LiA5peg5LqM55qE5pif6L6w44CCIiAvPgo8bGluayByZWw9ImNhbm9uaWNhbCIgaHJlZj0iaHR0cHM6Ly9zdGFydmVyc2UtZHJlYW0uYXBwLndvcmtidWRkeS5ob3N0LyIgLz4KCjwhLS0g5YiG5Lqr5Y2h54mH77ya57qv5paH5a2X5L+h5oGv77yM5LiN5byV55So5Lu75L2V5aSW6YOo5Zu+54mHIC0tPgo8bWV0YSBwcm9wZXJ0eT0ib2c6dHlwZSIgY29udGVudD0id2Vic2l0ZSIgLz4KPG1ldGEgcHJvcGVydHk9Im9nOnRpdGxlIiBjb250ZW50PSLmmJ/ln5/moqblooMgwrcgU1RBUlZFUlNFIERSRUFNIiAvPgo8bWV0YSBwcm9wZXJ0eT0ib2c6ZGVzY3JpcHRpb24iIGNvbnRlbnQ9Iuavj+S4gOS4quS9oO+8jOmDveaYr+S4gOmil+eLrOS4gOaXoOS6jOeahOaYn+i+sOOAgueUseeykuWtkOS4juWFieWGmeaIkOeahOayiea1uOW8j+aVsOWtl+iJuuacr+S9k+mqjOOAgiIgLz4KPG1ldGEgcHJvcGVydHk9Im9nOnVybCIgY29udGVudD0iaHR0cHM6Ly9zdGFydmVyc2UtZHJlYW0uYXBwLndvcmtidWRkeS5ob3N0LyIgLz4KPG1ldGEgcHJvcGVydHk9Im9nOmxvY2FsZSIgY29udGVudD0iemhfQ04iIC8+CjxtZXRhIG5hbWU9InR3aXR0ZXI6Y2FyZCIgY29udGVudD0ic3VtbWFyeSIgLz4KPG1ldGEgbmFtZT0idHdpdHRlcjp0aXRsZSIgY29udGVudD0i5pif5Z+f5qKm5aKDIMK3IFNUQVJWRVJTRSBEUkVBTSIgLz4KPG1ldGEgbmFtZT0idHdpdHRlcjpkZXNjcmlwdGlvbiIgY29udGVudD0i5q+P5LiA5Liq5L2g77yM6YO95piv5LiA6aKX54us5LiA5peg5LqM55qE5pif6L6w44CCIiAvPgoKPCEtLSDlhoXogZQgU1ZHIOWbvuagh+S9nOS4uiBmYXZpY29u77yM5LiN5L6d6LWW5Lu75L2V5aSW6YOo5Zu+54mHIC0tPgo8bGluayByZWw9Imljb24iIGhyZWY9ImRhdGE6aW1hZ2Uvc3ZnK3htbCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNjQgNjQnJTNFJTNDZGVmcyUzRSUzQ3JhZGlhbEdyYWRpZW50IGlkPSdnJyUzRSUzQ3N0b3Agb2Zmc2V0PScwJyBzdG9wLWNvbG9yPSclMjNmZmYnLyUzRSUzQ3N0b3Agb2Zmc2V0PScuNDUnIHN0b3AtY29sb3I9JyUyM2E3OGJmYScvJTNFJTNDc3RvcCBvZmZzZXQ9JzEnIHN0b3AtY29sb3I9JyUyMzA1MDYwZicvJTNFJTNDL3JhZGlhbEdyYWRpZW50JTNFJTNDL2RlZnMlM0UlM0NyZWN0IHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCcgcng9JzE0JyBmaWxsPSclMjMwNTA2MGYnLyUzRSUzQ2NpcmNsZSBjeD0nMzInIGN5PSczMicgcj0nMTEnIGZpbGw9J3VybCglMjNnKScvJTNFJTNDY2lyY2xlIGN4PSc0OCcgY3k9JzE2JyByPScyLjYnIGZpbGw9JyUyMzQxZTBmZicvJTNFJTNDY2lyY2xlIGN4PScxNScgY3k9JzQ1JyByPScyJyBmaWxsPSclMjNmZjViZDAnLyUzRSUzQ2NpcmNsZSBjeD0nNTAnIGN5PSc0OCcgcj0nMS42JyBmaWxsPSclMjNmZmQ0OGEnLyUzRSUzQy9zdmclM0UiIC8+Cgo8bm9zY3JpcHQ+CiAgPHN0eWxlPgogICAgLyog5pegIEpTIOaXtueahOmdmeaAgeWFnOW6le+8mumakOiXj+aJgOacieS+nei1luiEmuacrOeahOijhemlsOWxgu+8jOiuqeaWh+Wtl+WbnuWIsOacgOactOe0oOeahOW9ouaAgSAqLwogICAgLnZlaWwsIC5jdXJzb3ItZ2xvdywgLmRvdHMsIC5wcm9ncmVzcywgLmdyYWluIHsgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OyB9CiAgICAucmV2ZWFsLCAuY2gsIC5zY2VuZV9faW5uZXIgeyBvcGFjaXR5OiAxICFpbXBvcnRhbnQ7IHRyYW5zZm9ybTogbm9uZSAhaW1wb3J0YW50OyBmaWx0ZXI6IG5vbmUgIWltcG9ydGFudDsgfQogICAgLnR3LWNhcmV0IHsgZGlzcGxheTogbm9uZSAhaW1wb3J0YW50OyB9CiAgICBbZGF0YS10eXBlXTo6YWZ0ZXIgeyBjb250ZW50OiBhdHRyKGRhdGEtdGV4dCk7IH0KICAgIC5zY3JvbGwtaGludCB7IGRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDsgfQogIDwvc3R5bGU+Cjwvbm9zY3JpcHQ+Cgo8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9ImNzcy9zdHlsZS5jc3MiIC8+CjwvaGVhZD4KPGJvZHk+Cgo8YSBjbGFzcz0ic2tpcC1saW5rIiBocmVmPSIjbWFpbiI+6Lez5Yiw5Li76KaB5YaF5a65PC9hPgoKPCEtLSA9PT09PT09PT09IOS4u+inhuinie+8mkNhbnZhcyDnspLlrZDlsYLvvIjlm7rlrprpk7rmu6Hop4blj6PvvIzkvY3kuo7lhoXlrrnkuYvkuIvvvIkgPT09PT09PT09PSAtLT4KPGNhbnZhcyBpZD0ic3BhY2UiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2NhbnZhcz4KCjwhLS0gPT09PT09PT09PSDlmarngrkgLyDmmpfop5Ig6KaG55uW5bGC77ya5o+Q5Y2H6IO254mH6LSo5oSfID09PT09PT09PT0gLS0+CjxkaXYgY2xhc3M9ImdyYWluIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9kaXY+CjxkaXYgY2xhc3M9InZpZ25ldHRlIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9kaXY+Cgo8IS0tID09PT09PT09PT0g5YWJ5qCH5YWJ5pmV77yI5qGM6Z2i56uv6Lef6ZqP6byg5qCH77yJID09PT09PT09PT0gLS0+CjxkaXYgY2xhc3M9ImN1cnNvci1nbG93IiBpZD0iY3Vyc29yR2xvdyIgYXJpYS1oaWRkZW49InRydWUiPjwvZGl2PgoKPCEtLSA9PT09PT09PT09IOmhtumDqOa7muWKqOi/m+W6puadoSA9PT09PT09PT09IC0tPgo8ZGl2IGNsYXNzPSJwcm9ncmVzcyIgYXJpYS1oaWRkZW49InRydWUiPjxpIGlkPSJwcm9ncmVzc0JhciI+PC9pPjwvZGl2PgoKPCEtLSA9PT09PT09PT09IOaegeeugOWTgeeJjOagh+ivhiA9PT09PT09PT09IC0tPgo8aGVhZGVyIGNsYXNzPSJicmFuZCI+CiAgPHNwYW4gY2xhc3M9ImJyYW5kX19tYXJrIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICA8c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjIiPgogICAgICA8cGF0aCBkPSJNMTIgMi42IDEzLjkgOS40IDIwLjggMTEuMyAxMy45IDEzLjIgMTIgMjAgMTAuMSAxMy4yIDMuMiAxMS4zIDEwLjEgOS40WiIgLz4KICAgIDwvc3ZnPgogIDwvc3Bhbj4KICA8c3BhbiBjbGFzcz0iYnJhbmRfX3RleHQiPlNUQVJWRVJTRSZuYnNwO0RSRUFNPGVtPuaYn+Wfn+aipuWigzwvZW0+PC9zcGFuPgo8L2hlYWRlcj4KCjwhLS0gPT09PT09PT09PSDnjq/looPpn7PlvIDlhbPvvIhXZWIgQXVkaW8g5a6e5pe25ZCI5oiQ77yM5peg6Z+z6aKR5paH5Lu277yJID09PT09PT09PT0gLS0+CjxidXR0b24gY2xhc3M9ImF1ZGlvLWJ0biIgaWQ9ImF1ZGlvQnRuIiB0eXBlPSJidXR0b24iIGFyaWEtcHJlc3NlZD0iZmFsc2UiIGFyaWEtbGFiZWw9IuW8gOWQr+aYn+Wfn+S5i+WjsCI+CiAgPHNwYW4gY2xhc3M9ImF1ZGlvLWJ0bl9fYmFycyIgYXJpYS1oaWRkZW49InRydWUiPjxpPjwvaT48aT48L2k+PGk+PC9pPjxpPjwvaT48L3NwYW4+CiAgPHNwYW4gY2xhc3M9ImF1ZGlvLWJ0bl9fbGFiZWwiPuaYn+Wfn+S5i+WjsDwvc3Bhbj4KPC9idXR0b24+Cgo8IS0tID09PT09PT09PT0g56ug6IqC5a+86Iiq5ZyG54K577yI55SxIEpTIOeUn+aIkO+8iSA9PT09PT09PT09IC0tPgo8bmF2IGNsYXNzPSJkb3RzIiBpZD0iZG90cyIgYXJpYS1sYWJlbD0i56ug6IqC5a+86IiqIj48L25hdj4KCjxtYWluIGlkPSJtYWluIj4KCiAgPCEtLSDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKICAgICAgIOW6j+eroCDCtyDlvIDlnLoKICAgICAgIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkCAtLT4KICA8c2VjdGlvbiBjbGFzcz0ic2NlbmUgc2NlbmUtLWludHJvIiBpZD0iaW50cm8iIGFyaWEtbGFiZWxsZWRieT0iaGVyb1RpdGxlIgogICAgICAgICAgIGRhdGEtdGhlbWU9ImRlZXBzcGFjZSIgZGF0YS1zaGFwZT0iZ2FsYXh5IiBkYXRhLWFjY2VudD0iIzhiN2JmZiIgZGF0YS1sYWJlbD0i5bqP56ugIj4KICAgIDxkaXYgY2xhc3M9ImF1cmEgYXVyYS0tZGVlcHNwYWNlIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9kaXY+CgogICAgPGRpdiBjbGFzcz0ic2NlbmVfX2lubmVyIHNjZW5lX19pbm5lci0tY2VudGVyIj4KICAgICAgPHAgY2xhc3M9ImV5ZWJyb3cgcmV2ZWFsIiBkYXRhLWRlbGF5PSIwIj7msonmtbjlvI/mmJ/ln5/kvZPpqowgwrcgSU1NRVJTSVZFIEVYUEVSSUVOQ0U8L3A+CgogICAgICA8aDEgY2xhc3M9Imhlcm8tdGl0bGUiIGlkPSJoZXJvVGl0bGUiIGRhdGEtc3BsaXQgZGF0YS1kZWxheT0iMC4xNSI+5pif5Z+f5qKm5aKDPC9oMT4KCiAgICAgIDxwIGNsYXNzPSJoZXJvLXN1YiByZXZlYWwiIGRhdGEtZGVsYXk9IjAuOSI+CiAgICAgICAg5q+P5LiA5Liq5L2g77yM6YO95piv5LiA6aKX54us5LiA5peg5LqM55qE5pif6L6wCiAgICAgIDwvcD4KCiAgICAgIDxkaXYgY2xhc3M9Imhlcm8tbGluZSByZXZlYWwiIGRhdGEtZGVsYXk9IjEuMTUiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2Rpdj4KCiAgICAgIDxwIGNsYXNzPSJoZXJvLW5vdGUgcmV2ZWFsIiBkYXRhLWRlbGF5PSIxLjMiPgogICAgICAgIOi/memHjOayoeacieWcsOWbvu+8jOS5n+ayoeaciee7iOeCueOAgjxiciAvPgogICAgICAgIOWPquacieaVsOS7peWNg+iuoeeahOaYn+WwmO+8jOetieedgOiiq+S9oOeahOebruWFieWUpOmGkuOAggogICAgICA8L3A+CgogICAgICA8ZGl2IGNsYXNzPSJzY3JvbGwtaGludCIgaWQ9InNjcm9sbEhpbnQiPgogICAgICAgIDxzcGFuIGNsYXNzPSJzY3JvbGwtaGludF9fdGV4dCI+5ZCR5LiL5rua5Yqo77yM5Z2g5YWl5pif5Z+fPC9zcGFuPgogICAgICAgIDxzcGFuIGNsYXNzPSJzY3JvbGwtaGludF9fcmFpbCIgYXJpYS1oaWRkZW49InRydWUiPjxpPjwvaT48L3NwYW4+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9zZWN0aW9uPgoKICA8IS0tIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAogICAgICAg56ys5LiA56ugIMK3IOivnueUnwogICAgICAg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQIC0tPgogIDxzZWN0aW9uIGNsYXNzPSJzY2VuZSBzY2VuZS0tY2gxIiBpZD0iY2gxIiBhcmlhLWxhYmVsbGVkYnk9ImNoMVRpdGxlIgogICAgICAgICAgIGRhdGEtdGhlbWU9Im5lYnVsYSIgZGF0YS1zaGFwZT0iY29sbGFwc2UiIGRhdGEtYWNjZW50PSIjZmY3YmE4IiBkYXRhLWxhYmVsPSLor57nlJ8iPgogICAgPGRpdiBjbGFzcz0iYXVyYSBhdXJhLS1uZWJ1bGEiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2Rpdj4KCiAgICA8ZGl2IGNsYXNzPSJzY2VuZV9faW5uZXIiPgogICAgICA8aGVhZGVyIGNsYXNzPSJjaGFwdGVyLWhlYWQgcmV2ZWFsIj4KICAgICAgICA8c3BhbiBjbGFzcz0iY2hhcHRlci1udW0iPjAxPC9zcGFuPgogICAgICAgIDxzcGFuIGNsYXNzPSJjaGFwdGVyLW5hbWUiPuivnueUnzwvc3Bhbj4KICAgICAgICA8c3BhbiBjbGFzcz0iY2hhcHRlci10YWciPk5FQlVMQSZuYnNwO8K3Jm5ic3A75pif5LqR5Z2N57ypPC9zcGFuPgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxoMiBjbGFzcz0ic2NlbmUtdGl0bGUiIGlkPSJjaDFUaXRsZSIgZGF0YS1zcGxpdCBkYXRhLWRlbGF5PSIwLjEiPuS4gOWIh++8jOmDveS7juS4gOasoeWdoOiQveW8gOWnizwvaDI+CgogICAgICA8cCBjbGFzcz0icHJvc2UiIGRhdGEtdHlwZSBkYXRhLWRlbGF5PSIwLjM1IgogICAgICAgICBkYXRhLXRleHQ9IuS6v+S4h+W5tOWJje+8jOayoeacieWFie+8jOS5n+ayoeacieaWueWQkeOAguWPquacieS4gOeJh+e8k+aFouWRvOWQuOeahOWwmOWfg++8jOWcqOiZmuaXoOmHjOetieS4gOS4queQhueUseOAguWQjuadpeWug+mAieaLqeWdjee8qeKAlOKAlOaKiuaJgOacieaVo+iQveeahOiHquW3seaKsee0p++8jOS6juaYr+acieS6huesrOS4gOe8leWFieOAgiIKICAgICAgPjwvcD4KCiAgICAgIDxwIGNsYXNzPSJwcm9zZSBwcm9zZS0tYWNjZW50IiBkYXRhLXR5cGUgZGF0YS1kZWxheT0iMS45IgogICAgICAgICBkYXRhLXRleHQ9IuS9oOS5n+abvui/meagt++8jOWcqOaXoOS6uueci+ingeeahOWcsOaWue+8jOaKiuiHquW3semHjeaWsOeCueS6ruOAgiIKICAgICAgPjwvcD4KCiAgICAgIDx1bCBjbGFzcz0iZmFjdHMgcmV2ZWFsIiBkYXRhLWRlbGF5PSIwLjYiPgogICAgICAgIDxsaSBjbGFzcz0iZ2xhc3MgZ2xhc3MtLWZhY3QiPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImZhY3RfX2siPuW8leWKm+Wdjee8qeaXtumVvzwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJmYWN0X192Ij48YiBkYXRhLWNvdW50PSIwLjMiIGRhdGEtZGVjPSIxIj4wPC9iPjxlbT7np5I8L2VtPjwvc3Bhbj4KICAgICAgICA8L2xpPgogICAgICAgIDxsaSBjbGFzcz0iZ2xhc3MgZ2xhc3MtLWZhY3QiPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImZhY3RfX2siPuaguOW/g+a4qeW6pjwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJmYWN0X192Ij48YiBkYXRhLWNvdW50PSIxNTAwIiBkYXRhLWRlYz0iMCI+MDwvYj48ZW0+5LiH4oSDPC9lbT48L3NwYW4+CiAgICAgICAgPC9saT4KICAgICAgICA8bGkgY2xhc3M9ImdsYXNzIGdsYXNzLS1mYWN0Ij4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJmYWN0X19rIj7nrKzkuIDnvJXlhYnnmoTpgJ/luqY8L3NwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzcz0iZmFjdF9fdiI+PGIgZGF0YS1jb3VudD0iMjk5NzkyIiBkYXRhLWRlYz0iMCI+MDwvYj48ZW0+a20vczwvZW0+PC9zcGFuPgogICAgICAgIDwvbGk+CiAgICAgIDwvdWw+CiAgICA8L2Rpdj4KICA8L3NlY3Rpb24+CgogIDwhLS0g4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCiAgICAgICDnrKzkuoznq6Agwrcg6L2o6L+5CiAgICAgICDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAgLS0+CiAgPHNlY3Rpb24gY2xhc3M9InNjZW5lIHNjZW5lLS1jaDIiIGlkPSJjaDIiIGFyaWEtbGFiZWxsZWRieT0iY2gyVGl0bGUiCiAgICAgICAgICAgZGF0YS10aGVtZT0iYXVyb3JhIiBkYXRhLXNoYXBlPSJvcmJpdCIgZGF0YS1hY2NlbnQ9IiM1ZWVhZDQiIGRhdGEtbGFiZWw9Iui9qOi/uSI+CiAgICA8ZGl2IGNsYXNzPSJhdXJhIGF1cmEtLWF1cm9yYSIgYXJpYS1oaWRkZW49InRydWUiPjwvZGl2PgoKICAgIDxkaXYgY2xhc3M9InNjZW5lX19pbm5lciBzY2VuZV9faW5uZXItLXJpZ2h0Ij4KICAgICAgPGhlYWRlciBjbGFzcz0iY2hhcHRlci1oZWFkIHJldmVhbCI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNoYXB0ZXItbnVtIj4wMjwvc3Bhbj4KICAgICAgICA8c3BhbiBjbGFzcz0iY2hhcHRlci1uYW1lIj7ovajov7k8L3NwYW4+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNoYXB0ZXItdGFnIj5PUkJJVCZuYnNwO8K3Jm5ic3A75p6B5YWJ5LiO5byV5YqbPC9zcGFuPgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxoMiBjbGFzcz0ic2NlbmUtdGl0bGUiIGlkPSJjaDJUaXRsZSIgZGF0YS1zcGxpdCBkYXRhLWRlbGF5PSIwLjEiPuayoeacieS6uuaYr+ebtOe6v++8jOaIkeS7rOmDveWcqOe7leedgOS7gOS5iOaXi+i9rDwvaDI+CgogICAgICA8cCBjbGFzcz0icHJvc2UiIGRhdGEtdHlwZSBkYXRhLWRlbGF5PSIwLjM1IgogICAgICAgICBkYXRhLXRleHQ9Iuavj+S4gOmil+aYn+mDveacieiHquW3seeahOi9qOmBk++8jOiiq+eci+S4jeingeeahOaJi+eJteW8leedgO+8jOS4gOWciO+8jOWPiOS4gOWciOOAguS9oOS7peS4uueahOWBj+emu++8jOWFtuWunuWPquaYr+WPpuS4gOWcuuW8leWKm+OAgiIKICAgICAgPjwvcD4KCiAgICAgIDxkaXYgY2xhc3M9ImdsYXNzIGdsYXNzLS1jYXJkIHJldmVhbCIgZGF0YS1kZWxheT0iMC41Ij4KICAgICAgICA8c3BhbiBjbGFzcz0iZ2xhc3NfX2dsb3ciIGFyaWEtaGlkZGVuPSJ0cnVlIj48L3NwYW4+CiAgICAgICAgPGgzIGNsYXNzPSJjYXJkX190aXRsZSIgaWQ9ImNoMkNhcmRUaXRsZSI+56e75Yqo5L2g55qE6byg5qCHPC9oMz4KICAgICAgICA8cCBjbGFzcz0iY2FyZF9fdGV4dCI+CiAgICAgICAgICDmmJ/ln5/kvJrpmo/kvaDnmoTop4bop5LkuIDotbflgL7mlpzigJTigJTkvaDnnIvlkJHlk6rph4zvvIzlroflrpnlsLHlvoDlk6rph4zlgY/ovazkuIDngrnjgIIKICAgICAgICAgIOi/meS4jeaYr+mUmeinie+8jOW8leWKm+acrOadpeWwseaYr+i/meagt++8muS9oOazqOinhuedgOWug++8jOWug+S5n+WcqOe7leedgOS9oOOAggogICAgICAgIDwvcD4KICAgICAgICA8cCBjbGFzcz0iY2FyZF9faGludCI+PGkgYXJpYS1oaWRkZW49InRydWUiPjwvaT48c3BhbiBpZD0iY2gySGludFRleHQiPuaLluWKqOm8oOagh++8jOaUueWPmOaYn+Wfn+inhuinkjwvc3Bhbj48L3A+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgPC9zZWN0aW9uPgoKICA8IS0tIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAogICAgICAg56ys5LiJ56ugIMK3IOWFsem4owogICAgICAg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQIC0tPgogIDxzZWN0aW9uIGNsYXNzPSJzY2VuZSBzY2VuZS0tY2gzIiBpZD0iY2gzIiBhcmlhLWxhYmVsbGVkYnk9ImNoM1RpdGxlIgogICAgICAgICAgIGRhdGEtdGhlbWU9Im9jZWFuIiBkYXRhLXNoYXBlPSJjb25zdGVsbGF0aW9uIiBkYXRhLWFjY2VudD0iIzM4YmRmOCIgZGF0YS1sYWJlbD0i5YWx6bijIj4KICAgIDxkaXYgY2xhc3M9ImF1cmEgYXVyYS0tb2NlYW4iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2Rpdj4KCiAgICA8ZGl2IGNsYXNzPSJzY2VuZV9faW5uZXIgc2NlbmVfX2lubmVyLS1jZW50ZXIiPgogICAgICA8aGVhZGVyIGNsYXNzPSJjaGFwdGVyLWhlYWQgY2hhcHRlci1oZWFkLS1jZW50ZXIgcmV2ZWFsIj4KICAgICAgICA8c3BhbiBjbGFzcz0iY2hhcHRlci1udW0iPjAzPC9zcGFuPgogICAgICAgIDxzcGFuIGNsYXNzPSJjaGFwdGVyLW5hbWUiPuWFsem4ozwvc3Bhbj4KICAgICAgICA8c3BhbiBjbGFzcz0iY2hhcHRlci10YWciPlJFU09OQU5DRSZuYnNwO8K3Jm5ic3A75rex5rW35pif6K+tPC9zcGFuPgogICAgICA8L2hlYWRlcj4KCiAgICAgIDxoMiBjbGFzcz0ic2NlbmUtdGl0bGUiIGlkPSJjaDNUaXRsZSIgZGF0YS1zcGxpdCBkYXRhLWRlbGF5PSIwLjEiPuivtOS4gOWPpeivne+8jOiuqeWug+WcqOaYn+Wfn+mHjOS6rui1t+adpTwvaDI+CgogICAgICA8cCBjbGFzcz0icHJvc2UgcHJvc2UtLWNlbnRlciIgZGF0YS10eXBlIGRhdGEtZGVsYXk9IjAuMzUiCiAgICAgICAgIGRhdGEtdGV4dD0i5pif56m65LuO5LiN6K+E5Yik5Lu75L2V5LiA5Y+l6K+d44CC5L2g6K+05Ye655qE77yM5Lya5Y+Y5oiQ5LiA6aKX5pif5a2Q77yM5a6J6Z2Z5Zyw5oyC5Zyo6YKj6YeM77yM562J5p+Q5LiA5aSp6KKr5Y+m5LiA5Y+M55y8552b55yL6KeB44CCIgogICAgICA+PC9wPgoKICAgICAgPGRpdiBjbGFzcz0iZ2xhc3MgZ2xhc3MtLWNhcmQgZ2xhc3MtLXdpc2ggcmV2ZWFsIiBkYXRhLWRlbGF5PSIwLjU1Ij4KICAgICAgICA8c3BhbiBjbGFzcz0iZ2xhc3NfX2dsb3ciIGFyaWEtaGlkZGVuPSJ0cnVlIj48L3NwYW4+CiAgICAgICAgPGxhYmVsIGNsYXNzPSJ3aXNoX19sYWJlbCIgZm9yPSJ3aXNoSW5wdXQiPuS9oOeahOaYn+WFieWvhOivrTwvbGFiZWw+CiAgICAgICAgPGRpdiBjbGFzcz0id2lzaF9fcm93Ij4KICAgICAgICAgIDxpbnB1dCBpZD0id2lzaElucHV0IiBjbGFzcz0id2lzaF9faW5wdXQiIHR5cGU9InRleHQiIG1heGxlbmd0aD0iNDAiIGF1dG9jb21wbGV0ZT0ib2ZmIgogICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPSLlhpnkuIvmraTliLvmg7Por7TnmoTor53igKbvvIg0MCDlrZfku6XlhoXvvIkiIC8+CiAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4iIGlkPSJ3aXNoQnRuIiB0eXBlPSJidXR0b24iPgogICAgICAgICAgICA8c3Bhbj7ngrnkuq7ov5npopfmmJ88L3NwYW4+CiAgICAgICAgICAgIDxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNiIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMiAzLjUgMTMuNyA5LjUgMTkuOCAxMS4yIDEzLjcgMTIuOSAxMiAxOSAxMC4zIDEyLjkgNC4yIDExLjIgMTAuMyA5LjVaIiAvPgogICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgIDwvZGl2PgogICAgICAgIDxwIGNsYXNzPSJ3aXNoX19ub3RlIj4KICAgICAgICAgIDxzdmcgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5IiAvPjxwYXRoIGQ9Ik0xMiA4djVtMCAzLjJ2LjEiIC8+CiAgICAgICAgICA8L3N2Zz4KICAgICAgICAgIOS9oOeahOaYn+S8muS/neWtmOWcqOi/meWPsOiuvuWkh+S4iu+8jOWPquWxnuS6juS9oAogICAgICAgIDwvcD4KCiAgICAgICAgPGRpdiBjbGFzcz0id2lzaF9fbGlzdC13cmFwIiBpZD0id2lzaExpc3RXcmFwIiBoaWRkZW4+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJ3aXNoX19saXN0LWhlYWQiPgogICAgICAgICAgICA8c3Bhbj7lt7Lngrnkuq7nmoTmmJ/or608L3NwYW4+CiAgICAgICAgICAgIDxidXR0b24gY2xhc3M9ImxpbmstYnRuIiBpZD0id2lzaENsZWFyIiB0eXBlPSJidXR0b24iPuWFqOmDqOeGhOeBrTwvYnV0dG9uPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8dWwgY2xhc3M9Indpc2hfX2xpc3QiIGlkPSJ3aXNoTGlzdCI+PC91bD4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICA8L3NlY3Rpb24+CgogIDwhLS0g4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCiAgICAgICDnrKzlm5vnq6Agwrcg55u46YGHCiAgICAgICDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAgLS0+CiAgPHNlY3Rpb24gY2xhc3M9InNjZW5lIHNjZW5lLS1jaDQiIGlkPSJjaDQiIGFyaWEtbGFiZWxsZWRieT0iY2g0VGl0bGUiCiAgICAgICAgICAgZGF0YS10aGVtZT0ibmVvbiIgZGF0YS1zaGFwZT0iY29udmVyZ2UiIGRhdGEtYWNjZW50PSIjZmY1YmQwIiBkYXRhLWxhYmVsPSLnm7jpgYciPgogICAgPGRpdiBjbGFzcz0iYXVyYSBhdXJhLS1uZW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9kaXY+CgogICAgPGRpdiBjbGFzcz0ic2NlbmVfX2lubmVyIj4KICAgICAgPGhlYWRlciBjbGFzcz0iY2hhcHRlci1oZWFkIHJldmVhbCI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNoYXB0ZXItbnVtIj4wNDwvc3Bhbj4KICAgICAgICA8c3BhbiBjbGFzcz0iY2hhcHRlci1uYW1lIj7nm7jpgYc8L3NwYW4+CiAgICAgICAgPHNwYW4gY2xhc3M9ImNoYXB0ZXItdGFnIj5FTkNPVU5URVImbmJzcDvCtyZuYnNwO+mck+iZueamgueOhzwvc3Bhbj4KICAgICAgPC9oZWFkZXI+CgogICAgICA8aDIgY2xhc3M9InNjZW5lLXRpdGxlIiBpZD0iY2g0VGl0bGUiIGRhdGEtc3BsaXQgZGF0YS1kZWxheT0iMC4xIj7miJHku6znm7jpgYfnmoTmpoLnjofvvIzlsI/liLDmjqXov5HlpYfov7k8L2gyPgoKICAgICAgPHAgY2xhc3M9InByb3NlIiBkYXRhLXR5cGUgZGF0YS1kZWxheT0iMC4zNSIKICAgICAgICAgZGF0YS10ZXh0PSLkur/kuIfpopfmmJ/vvIzkur/kuIfkuKrmlrnlkJHjgILoi6Xmr4/kuIDpopfpg73ni6zoh6rov5zooYzvvIzmiJHku6zopoHotbDlrozlpJrlsJHlhYnlubTvvIzmiY3kvJrlnKjlkIzkuIDniYflpJznqbrph4zvvIzlkIzml7bmiqzlpLTjgIIiCiAgICAgID48L3A+CgogICAgICA8ZGl2IGNsYXNzPSJnbGFzcyBnbGFzcy0tY2FyZCBnbGFzcy0tY2FsYyByZXZlYWwiIGRhdGEtZGVsYXk9IjAuNSI+CiAgICAgICAgPHNwYW4gY2xhc3M9ImdsYXNzX19nbG93IiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9zcGFuPgoKICAgICAgICA8ZGl2IGNsYXNzPSJjYWxjX19oZWFkIj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJjYWxjX19sYWJlbCI+55Sx5pys5Zyw5a6H5a6Z5bi46YeP6K6h566XIMK3IOavj+asoeeUn+aIkOmDveeLrOS4gOaXoOS6jDwvc3Bhbj4KICAgICAgICAgIDxzcGFuIGNsYXNzPSJjYWxjX19zZWVkIiBpZD0iY29zbWljSWQiPuWuh+Wumee8luWPtyAj4oCU4oCUPC9zcGFuPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJjYWxjX19ncmlkIiBpZD0iY2FsY0dyaWQiPjwhLS0gSlMg5aGr5YWFIC0tPjwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJjYWxjX19yZXN1bHQiPgogICAgICAgICAgPHNwYW4gY2xhc3M9ImNhbGNfX3Jlc3VsdC1rIj7nm7jpgYfmpoLnjoc8L3NwYW4+CiAgICAgICAgICA8c3BhbiBjbGFzcz0iY2FsY19fcmVzdWx0LXYiPgogICAgICAgICAgICBQIOKJiCAxIC8gPGIgaWQ9InByb2JWYWx1ZSI+4oCUPC9iPgogICAgICAgICAgPC9zcGFuPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8cCBjbGFzcz0iY2FsY19fbm90ZSI+CiAgICAgICAgICDmjaLkuKror7Tms5XvvJrljbPkvb/kvaDmr4/np5LorqTor4bkuIDkuKrkurrvvIzotbDlrozov5nkuKrmpoLnjofvvIzkuZ/lpKfnuqbpnIDopoEKICAgICAgICAgIDxiIGlkPSJwcm9iWWVhcnMiPuKAlDwvYj4g5bm044CCCiAgICAgICAgPC9wPgogICAgICA8L2Rpdj4KCiAgICAgIDxwIGNsYXNzPSJwcm9zZSBwcm9zZS0tYWNjZW50IiBkYXRhLXR5cGUgZGF0YS1kZWxheT0iMC44IgogICAgICAgICBkYXRhLXRleHQ9IuaJgOS7pe+8jOaIkeS7rOatpOWIu+eahOebuOmBh++8jOWAvOW+l+iiq+iupOecn+WvueW+heOAgiIKICAgICAgPjwvcD4KICAgIDwvZGl2PgogIDwvc2VjdGlvbj4KCiAgPCEtLSDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKICAgICAgIOe7iOeroCDCtyDoh7TkvaAKICAgICAgIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkCAtLT4KICA8c2VjdGlvbiBjbGFzcz0ic2NlbmUgc2NlbmUtLWVuZCIgaWQ9ImVuZGluZyIgYXJpYS1sYWJlbGxlZGJ5PSJlbmRUaXRsZSIKICAgICAgICAgICBkYXRhLXRoZW1lPSJmaXJlZmx5IiBkYXRhLXNoYXBlPSJzaWxob3VldHRlIiBkYXRhLWFjY2VudD0iI2ZmZDQ4YSIgZGF0YS1sYWJlbD0i57uI56ugIj4KICAgIDxkaXYgY2xhc3M9ImF1cmEgYXVyYS0tZmlyZWZseSIgYXJpYS1oaWRkZW49InRydWUiPjwvZGl2PgoKICAgIDxkaXYgY2xhc3M9InNjZW5lX19pbm5lciBzY2VuZV9faW5uZXItLWNlbnRlciI+CiAgICAgIDxwIGNsYXNzPSJleWVicm93IHJldmVhbCI+RklOQUxFJm5ic3A7wrcmbmJzcDvmo67mnpfokKTngavkuI7ng5/ngas8L3A+CgogICAgICA8aDIgY2xhc3M9ImVuZC10aXRsZSIgaWQ9ImVuZFRpdGxlIiBkYXRhLXNwbGl0IGRhdGEtZGVsYXk9IjAuMSI+6Ie05q+P5LiA5L2N54us5LiA5peg5LqM55qE5L2gPC9oMj4KCiAgICAgIDxwIGNsYXNzPSJwcm9zZSBwcm9zZS0tY2VudGVyIiBkYXRhLXR5cGUgZGF0YS1kZWxheT0iMC40IgogICAgICAgICBkYXRhLXRleHQ9IuaEv+S9oOiiq+i/meS4quS4lueVjOa4qeaflOS7peW+he+8jOS5n+aEv+S9oOaIkOS4uuiHquW3seeahOWFieOAgiIKICAgICAgPjwvcD4KICAgICAgPHAgY2xhc3M9InByb3NlIHByb3NlLS1jZW50ZXIiIGRhdGEtdHlwZSBkYXRhLWRlbGF5PSIxLjUiCiAgICAgICAgIGRhdGEtdGV4dD0i5LiN5b+F54Wn5Lqu5omA5pyJ5Lq677yM54Wn5Lqu6Ieq5bex5bCx5aSf5LqG44CCIgogICAgICA+PC9wPgoKICAgICAgPGRpdiBjbGFzcz0iZW5kc2lnbiByZXZlYWwiIGRhdGEtZGVsYXk9IjAuOCI+CiAgICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIGJ0bi0tZ2hvc3QiIGlkPSJyZXBsYXlCdG4iIHR5cGU9ImJ1dHRvbiI+CiAgICAgICAgICA8c3ZnIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE1IiBoZWlnaHQ9IjE1IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIxLjYiIGFyaWEtaGlkZGVuPSJ0cnVlIj4KICAgICAgICAgICAgPHBhdGggZD0iTTIwIDEyYTggOCAwIDEgMS0yLjMtNS42IiAvPjxwYXRoIGQ9Ik0yMCA0djRoLTQiIC8+CiAgICAgICAgICA8L3N2Zz4KICAgICAgICAgIDxzcGFuPuWGjee7veaUvuS4gOasoTwvc3Bhbj4KICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8cCBjbGFzcz0iZW5kc2lnbl9fbm90ZSI+54K55Ye75Lu75oSP5L2N572u77yM5Lmf5Lya5pyJ5LiA6aKX5pif5Li65L2g54K45byAPC9wPgogICAgICA8L2Rpdj4KCiAgICAgIDxmb290ZXIgY2xhc3M9ImZvb3RlciI+CiAgICAgICAgPGRpdiBjbGFzcz0iZm9vdGVyX19saW5lIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9kaXY+CiAgICAgICAgPHAgY2xhc3M9ImZvb3Rlcl9fYnJhbmQiPlNUQVJWRVJTRSZuYnNwO0RSRUFNJm5ic3A7wrcmbmJzcDvmmJ/ln5/moqblooM8L3A+CiAgICAgICAgPHAgY2xhc3M9ImZvb3Rlcl9fbWV0YSI+5LiA5Zy655So57KS5a2Q5LiO5YWJ5YaZ5oiQ55qE5L+hIMK3IDxzcGFuIGlkPSJmb290WWVhciI+MjAyNjwvc3Bhbj4gwrcgPHNwYW4gaWQ9ImZvb3RJZCI+I+KAlOKAlDwvc3Bhbj48L3A+CiAgICAgIDwvZm9vdGVyPgogICAgPC9kaXY+CiAgPC9zZWN0aW9uPgoKPC9tYWluPgoKPCEtLSDovbvmj5DnpLogLS0+CjxkaXYgY2xhc3M9InRvYXN0IiBpZD0idG9hc3QiIHJvbGU9InN0YXR1cyIgYXJpYS1saXZlPSJwb2xpdGUiPjwvZGl2PgoKPCEtLSDlvIDlnLrpga7nvanvvJrmnoHnn63nmoTjgIzlkLjmsJTjgI3ku6rlvI/mhJ8gLS0+CjxkaXYgY2xhc3M9InZlaWwiIGlkPSJ2ZWlsIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PHNwYW4+PC9zcGFuPjwvZGl2PgoKPHNjcmlwdCBzcmM9ImpzL3BhcnRpY2xlcy5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJqcy9hdWRpby5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJqcy9tYWluLmpzIj48L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+Cg==
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<!-- 最早执行：标记「JS 可用」。脚本被禁用或内联失效时，html.no-js 会保留，
+     CSS 里的兜底规则会接管，页面依旧是可读的静态长页，而不是一块黑屏。 -->
+<script>document.documentElement.classList.remove('no-js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#05060f" />
+<meta name="color-scheme" content="dark" />
+<title>星域梦境 · STARVERSE DREAM</title>
+<meta name="description" content="星域梦境 STARVERSE DREAM —— 一场由粒子与光写成的沉浸式数字艺术体验。每一个你，都是一颗独一无二的星辰。" />
+<link rel="canonical" href="https://starverse-dream.app.workbuddy.host/" />
+
+<!-- 分享卡片：纯文字信息，不引用任何外部图片 -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="星域梦境 · STARVERSE DREAM" />
+<meta property="og:description" content="每一个你，都是一颗独一无二的星辰。由粒子与光写成的沉浸式数字艺术体验。" />
+<meta property="og:url" content="https://starverse-dream.app.workbuddy.host/" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="星域梦境 · STARVERSE DREAM" />
+<meta name="twitter:description" content="每一个你，都是一颗独一无二的星辰。" />
+
+<!-- 内联 SVG 图标作为 favicon，不依赖任何外部图片 -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop offset='0' stop-color='%23fff'/%3E%3Cstop offset='.45' stop-color='%23a78bfa'/%3E%3Cstop offset='1' stop-color='%2305060f'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%2305060f'/%3E%3Ccircle cx='32' cy='32' r='11' fill='url(%23g)'/%3E%3Ccircle cx='48' cy='16' r='2.6' fill='%2341e0ff'/%3E%3Ccircle cx='15' cy='45' r='2' fill='%23ff5bd0'/%3E%3Ccircle cx='50' cy='48' r='1.6' fill='%23ffd48a'/%3E%3C/svg%3E" />
+
+<noscript>
+  <style>
+    /* 无 JS 时的静态兜底：隐藏所有依赖脚本的装饰层，让文字回到最朴素的形态 */
+    .veil, .cursor-glow, .dots, .progress, .grain { display: none !important; }
+    .reveal, .ch, .scene__inner { opacity: 1 !important; transform: none !important; filter: none !important; }
+    .tw-caret { display: none !important; }
+    [data-type]::after { content: attr(data-text); }
+    .scroll-hint { display: none !important; }
+  </style>
+</noscript>
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- ========== 主视觉：Canvas 粒子层（固定铺满视口，位于内容之下） ========== -->
+<canvas id="space" aria-hidden="true"></canvas>
+
+<!-- ========== 噪点 / 暗角 覆盖层：提升胶片质感 ========== -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ========== 光标光晕（桌面端跟随鼠标） ========== -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ========== 顶部滚动进度条 ========== -->
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<!-- ========== 极简品牌标识 ========== -->
+<header class="brand">
+  <span class="brand__mark" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.2">
+      <path d="M12 2.6 13.9 9.4 20.8 11.3 13.9 13.2 12 20 10.1 13.2 3.2 11.3 10.1 9.4Z" />
+    </svg>
+  </span>
+  <span class="brand__text">STARVERSE&nbsp;DREAM<em>星域梦境</em></span>
+</header>
+
+<!-- ========== 环境音开关（Web Audio 实时合成，无音频文件） ========== -->
+<button class="audio-btn" id="audioBtn" type="button" aria-pressed="false" aria-label="开启星域之声">
+  <span class="audio-btn__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  <span class="audio-btn__label">星域之声</span>
+</button>
+
+<!-- ========== 章节导航圆点（由 JS 生成） ========== -->
+<nav class="dots" id="dots" aria-label="章节导航"></nav>
+
+<main id="main">
+
+  <!-- ══════════════════════════════════════════════════
+       序章 · 开场
+       ══════════════════════════════════════════════════ -->
+  <section class="scene scene--intro" id="intro" aria-labelledby="heroTitle"
+           data-theme="deepspace" data-shape="galaxy" data-accent="#8b7bff" data-label="序章">
+    <div class="aura aura--deepspace" aria-hidden="true"></div>
+
+    <div class="scene__inner scene__inner--center">
+      <p class="eyebrow reveal" data-delay="0">沉浸式星域体验 · IMMERSIVE EXPERIENCE</p>
+
+      <h1 class="hero-title" id="heroTitle" data-split data-delay="0.15">星域梦境</h1>
+
+      <p class="hero-sub reveal" data-delay="0.9">
+        每一个你，都是一颗独一无二的星辰
+      </p>
+
+      <div class="hero-line reveal" data-delay="1.15" aria-hidden="true"></div>
+
+      <p class="hero-note reveal" data-delay="1.3">
+        这里没有地图，也没有终点。<br />
+        只有数以千计的星尘，等着被你的目光唤醒。
+      </p>
+
+      <div class="scroll-hint" id="scrollHint">
+        <span class="scroll-hint__text">向下滚动，坠入星域</span>
+        <span class="scroll-hint__rail" aria-hidden="true"><i></i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       第一章 · 诞生
+       ══════════════════════════════════════════════════ -->
+  <section class="scene scene--ch1" id="ch1" aria-labelledby="ch1Title"
+           data-theme="nebula" data-shape="collapse" data-accent="#ff7ba8" data-label="诞生">
+    <div class="aura aura--nebula" aria-hidden="true"></div>
+
+    <div class="scene__inner">
+      <header class="chapter-head reveal">
+        <span class="chapter-num">01</span>
+        <span class="chapter-name">诞生</span>
+        <span class="chapter-tag">NEBULA&nbsp;·&nbsp;星云坍缩</span>
+      </header>
+
+      <h2 class="scene-title" id="ch1Title" data-split data-delay="0.1">一切，都从一次坠落开始</h2>
+
+      <p class="prose" data-type data-delay="0.35"
+         data-text="亿万年前，没有光，也没有方向。只有一片缓慢呼吸的尘埃，在虚无里等一个理由。后来它选择坍缩——把所有散落的自己抱紧，于是有了第一缕光。"
+      ></p>
+
+      <p class="prose prose--accent" data-type data-delay="1.9"
+         data-text="你也曾这样，在无人看见的地方，把自己重新点亮。"
+      ></p>
+
+      <ul class="facts reveal" data-delay="0.6">
+        <li class="glass glass--fact">
+          <span class="fact__k">引力坍缩时长</span>
+          <span class="fact__v"><b data-count="0.3" data-dec="1">0</b><em>秒</em></span>
+        </li>
+        <li class="glass glass--fact">
+          <span class="fact__k">核心温度</span>
+          <span class="fact__v"><b data-count="1500" data-dec="0">0</b><em>万℃</em></span>
+        </li>
+        <li class="glass glass--fact">
+          <span class="fact__k">第一缕光的速度</span>
+          <span class="fact__v"><b data-count="299792" data-dec="0">0</b><em>km/s</em></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       第二章 · 轨迹
+       ══════════════════════════════════════════════════ -->
+  <section class="scene scene--ch2" id="ch2" aria-labelledby="ch2Title"
+           data-theme="aurora" data-shape="orbit" data-accent="#5eead4" data-label="轨迹">
+    <div class="aura aura--aurora" aria-hidden="true"></div>
+
+    <div class="scene__inner scene__inner--right">
+      <header class="chapter-head reveal">
+        <span class="chapter-num">02</span>
+        <span class="chapter-name">轨迹</span>
+        <span class="chapter-tag">ORBIT&nbsp;·&nbsp;极光与引力</span>
+      </header>
+
+      <h2 class="scene-title" id="ch2Title" data-split data-delay="0.1">没有人是直线，我们都在绕着什么旋转</h2>
+
+      <p class="prose" data-type data-delay="0.35"
+         data-text="每一颗星都有自己的轨道，被看不见的手牵引着，一圈，又一圈。你以为的偏离，其实只是另一场引力。"
+      ></p>
+
+      <div class="glass glass--card reveal" data-delay="0.5">
+        <span class="glass__glow" aria-hidden="true"></span>
+        <h3 class="card__title" id="ch2CardTitle">移动你的鼠标</h3>
+        <p class="card__text">
+          星域会随你的视角一起倾斜——你看向哪里，宇宙就往哪里偏转一点。
+          这不是错觉，引力本来就是这样：你注视着它，它也在绕着你。
+        </p>
+        <p class="card__hint"><i aria-hidden="true"></i><span id="ch2HintText">拖动鼠标，改变星域视角</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       第三章 · 共鸣
+       ══════════════════════════════════════════════════ -->
+  <section class="scene scene--ch3" id="ch3" aria-labelledby="ch3Title"
+           data-theme="ocean" data-shape="constellation" data-accent="#38bdf8" data-label="共鸣">
+    <div class="aura aura--ocean" aria-hidden="true"></div>
+
+    <div class="scene__inner scene__inner--center">
+      <header class="chapter-head chapter-head--center reveal">
+        <span class="chapter-num">03</span>
+        <span class="chapter-name">共鸣</span>
+        <span class="chapter-tag">RESONANCE&nbsp;·&nbsp;深海星语</span>
+      </header>
+
+      <h2 class="scene-title" id="ch3Title" data-split data-delay="0.1">说一句话，让它在星域里亮起来</h2>
+
+      <p class="prose prose--center" data-type data-delay="0.35"
+         data-text="星空从不评判任何一句话。你说出的，会变成一颗星子，安静地挂在那里，等某一天被另一双眼睛看见。"
+      ></p>
+
+      <div class="glass glass--card glass--wish reveal" data-delay="0.55">
+        <span class="glass__glow" aria-hidden="true"></span>
+        <label class="wish__label" for="wishInput">你的星光寄语</label>
+        <div class="wish__row">
+          <input id="wishInput" class="wish__input" type="text" maxlength="40" autocomplete="off"
+                 placeholder="写下此刻想说的话…（40 字以内）" />
+          <button class="btn" id="wishBtn" type="button">
+            <span>点亮这颗星</span>
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M12 3.5 13.7 9.5 19.8 11.2 13.7 12.9 12 19 10.3 12.9 4.2 11.2 10.3 9.5Z" />
+            </svg>
+          </button>
+        </div>
+        <p class="wish__note">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" /><path d="M12 8v5m0 3.2v.1" />
+          </svg>
+          你的星会保存在这台设备上，只属于你
+        </p>
+
+        <div class="wish__list-wrap" id="wishListWrap" hidden>
+          <div class="wish__list-head">
+            <span>已点亮的星语</span>
+            <button class="link-btn" id="wishClear" type="button">全部熄灭</button>
+          </div>
+          <ul class="wish__list" id="wishList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       第四章 · 相遇
+       ══════════════════════════════════════════════════ -->
+  <section class="scene scene--ch4" id="ch4" aria-labelledby="ch4Title"
+           data-theme="neon" data-shape="converge" data-accent="#ff5bd0" data-label="相遇">
+    <div class="aura aura--neon" aria-hidden="true"></div>
+
+    <div class="scene__inner">
+      <header class="chapter-head reveal">
+        <span class="chapter-num">04</span>
+        <span class="chapter-name">相遇</span>
+        <span class="chapter-tag">ENCOUNTER&nbsp;·&nbsp;霓虹概率</span>
+      </header>
+
+      <h2 class="scene-title" id="ch4Title" data-split data-delay="0.1">我们相遇的概率，小到接近奇迹</h2>
+
+      <p class="prose" data-type data-delay="0.35"
+         data-text="亿万颗星，亿万个方向。若每一颗都独自远行，我们要走完多少光年，才会在同一片夜空里，同时抬头。"
+      ></p>
+
+      <div class="glass glass--card glass--calc reveal" data-delay="0.5">
+        <span class="glass__glow" aria-hidden="true"></span>
+
+        <div class="calc__head">
+          <span class="calc__label">由本地宇宙常量计算 · 每次生成都独一无二</span>
+          <span class="calc__seed" id="cosmicId">宇宙编号 #——</span>
+        </div>
+
+        <div class="calc__grid" id="calcGrid"><!-- JS 填充 --></div>
+
+        <div class="calc__result">
+          <span class="calc__result-k">相遇概率</span>
+          <span class="calc__result-v">
+            P ≈ 1 / <b id="probValue">—</b>
+          </span>
+        </div>
+
+        <p class="calc__note">
+          换个说法：即使你每秒认识一个人，走完这个概率，也大约需要
+          <b id="probYears">—</b> 年。
+        </p>
+      </div>
+
+      <p class="prose prose--accent" data-type data-delay="0.8"
+         data-text="所以，我们此刻的相遇，值得被认真对待。"
+      ></p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       终章 · 致你
+       ══════════════════════════════════════════════════ -->
+  <section class="scene scene--end" id="ending" aria-labelledby="endTitle"
+           data-theme="firefly" data-shape="silhouette" data-accent="#ffd48a" data-label="终章">
+    <div class="aura aura--firefly" aria-hidden="true"></div>
+
+    <div class="scene__inner scene__inner--center">
+      <p class="eyebrow reveal">FINALE&nbsp;·&nbsp;森林萤火与烟火</p>
+
+      <h2 class="end-title" id="endTitle" data-split data-delay="0.1">致每一位独一无二的你</h2>
+
+      <p class="prose prose--center" data-type data-delay="0.4"
+         data-text="愿你被这个世界温柔以待，也愿你成为自己的光。"
+      ></p>
+      <p class="prose prose--center" data-type data-delay="1.5"
+         data-text="不必照亮所有人，照亮自己就够了。"
+      ></p>
+
+      <div class="endsign reveal" data-delay="0.8">
+        <button class="btn btn--ghost" id="replayBtn" type="button">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M20 12a8 8 0 1 1-2.3-5.6" /><path d="M20 4v4h-4" />
+          </svg>
+          <span>再绽放一次</span>
+        </button>
+        <p class="endsign__note">点击任意位置，也会有一颗星为你炸开</p>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__line" aria-hidden="true"></div>
+        <p class="footer__brand">STARVERSE&nbsp;DREAM&nbsp;·&nbsp;星域梦境</p>
+        <p class="footer__meta">一场用粒子与光写成的信 · <span id="footYear">2026</span> · <span id="footId">#——</span></p>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<!-- 轻提示 -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- 开场遮罩：极短的「吸气」仪式感 -->
+<div class="veil" id="veil" aria-hidden="true"><span></span></div>
+
+<script src="js/particles.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ui-extras.js"></script>
+</body>
+</html>
