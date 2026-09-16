@@ -142,11 +142,21 @@
 
   function buildCommands() {
     var cmds = SCENES.map(function (s) {
-      return { group: '章节', label: s.label + ' · ' + s.title, run: function () { smoothScroll(s.el); } };
+      return {
+        group: '章节',
+        label: s.label + ' · ' + s.title,
+        keywords: s.label + ' 章节 跳转 前往 ' + s.title,
+        run: function () { smoothScroll(s.el); }
+      };
     });
-    cmds.push({ group: '声音', label: (audio && audio.enabled ? '关闭星域之声' : '开启星域之声'), run: toggleAudio });
-    cmds.push({ group: '工具', label: '复制我的宇宙编号', run: copyId });
-    cmds.push({ group: '工具', label: '再绽放一次（回到序章重播）', run: replay });
+    cmds.push({
+      group: '声音',
+      label: (audio && audio.enabled ? '关闭星域之声' : '开启星域之声'),
+      keywords: '声音 音频 音乐 环境音 静音 mute',
+      run: toggleAudio
+    });
+    cmds.push({ group: '工具', label: '复制我的宇宙编号', keywords: '复制 编号 id 分享 share', run: copyId });
+    cmds.push({ group: '工具', label: '再绽放一次（回到序章重播）', keywords: '重播 重来 replay 重新开始 回到开头', run: replay });
     return cmds;
   }
 
@@ -155,8 +165,12 @@
   var active = 0;
 
   function render(q) {
-    var key = (q || '').toLowerCase();
-    filtered = items.filter(function (c) { return !key || c.label.toLowerCase().indexOf(key) >= 0; });
+    var key = (q || '').trim().toLowerCase();
+    filtered = items.filter(function (c) {
+      if (!key) return true;
+      var hay = (c.label + ' ' + c.group + ' ' + (c.keywords || '')).toLowerCase();
+      return hay.indexOf(key) >= 0;
+    });
     active = 0;
     if (!filtered.length) {
       listEl.innerHTML = '<li class="cmdk__item is-empty" role="option" aria-disabled="true" aria-selected="false">' +
@@ -326,8 +340,9 @@
       cell.addEventListener('click', function () { smoothScroll(s.el); });
       wrap.appendChild(cell);
     });
+    /* footer 可能嵌在终章的内层容器里，用它的父节点做插入点才安全 */
     var foot = ending.querySelector('.footer');
-    if (foot) ending.insertBefore(wrap, foot); else ending.appendChild(wrap);
+    if (foot && foot.parentNode) foot.parentNode.insertBefore(wrap, foot); else ending.appendChild(wrap);
 
     /* 文档高度变了 → 让主脚本重新测量章节位置与顶部进度条 */
     window.dispatchEvent(new Event('resize'));
